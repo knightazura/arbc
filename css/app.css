@@ -1,0 +1,13 @@
+.top-landing, .main-landing {
+	min-height: 50vh; 
+	text-align: center; 
+	color: #fff; 
+	font-family: "Brandon Grotesque"; 
+	font-weight: 200;
+	font-size: 14pt;
+}
+.top-landing { background: #484e58; }
+.main-landing { background: #655a39; border-top: 5px solid #f3fb1e; }
+.main-info-1, .main-info-2 { padding: 1.3em 0; }
+.main-info-2 { border-top: 3px dashed #b2a57d; }
+.get-involved-button { background: #8092b0; padding: 1em 0; }

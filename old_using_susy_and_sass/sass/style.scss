@@ -1,0 +1,207 @@
+// Screen
+// ======
+
+@import "normalize";
+@import "compass";
+@import "susy";
+@import "breakpoint";
+
+$susy: (
+	global-box-sizing: border-box
+);
+
+@include border-box-sizing;
+
+#fullpage {
+  @include container;
+}
+
+.section {
+  @include span(full);
+  height: 100vh;
+  text-align:center;
+  overflow: hidden;
+}
+
+// Dots Navigation
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+}
+#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+ }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #333;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
+}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -7px;
+    color: #fff;
+    font-size: 11px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    color: #3a3a3a;
+    width: auto;
+    opacity: 1;
+    background: rgba(255,255,255,.85);
+    padding: 5px 17px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,.5);
+}
+
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+  /*
+  #fp-nav ul li .fp-tooltip.right:after {
+    content: "";
+    display: block;
+    width:0;
+    height:0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid red;
+    position: absolute;
+    top: 0;
+    right: -10px;
+  }
+  */
+
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell{
+    height: auto !important;
+}
+
+// Own Style
+
+// Part1 with background video
+#myVideo {
+  @include span(full);
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top:0;
+  right:0;
+  background-size: 100% 100%;
+  background-color: black; /* in case the video doesn't fit the whole page*/
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+  z-index:3;
+}
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+
+.part1 {
+  background: grey;
+  overflow: hidden;
+}
+
+  .part1 .layer{
+    @include span(full);
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    top: 43%;
+  }
+
+.part2 {
+  background: aqua;
+}
+
+.part3 {
+  background: lime;
+}
+
+.part4 {
+  background: orange;
+}
+
+.part5 {
+  background: violet;
+}
