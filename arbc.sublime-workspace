@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padi",
+				"padding-bottom"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
 				"back",
 				"background"
 			],
@@ -160,10 +180,10 @@
 	"buffers":
 	[
 		{
-			"file": "index.php",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3211,
+				"buffer_size": 8333,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,7 +191,7 @@
 			"file": "css/app.css",
 			"settings":
 			{
-				"buffer_size": 429,
+				"buffer_size": 1163,
 				"line_ending": "Windows"
 			}
 		},
@@ -179,7 +199,7 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 437,
+				"buffer_size": 627,
 				"line_ending": "Windows"
 			}
 		},
@@ -187,7 +207,7 @@
 			"file": "/D/Development/foundation-6/index.html",
 			"settings":
 			{
-				"buffer_size": 7177,
+				"buffer_size": 8768,
 				"line_ending": "Unix"
 			}
 		}
@@ -271,6 +291,8 @@
 	],
 	"file_history":
 	[
+		"/D/Development/foundation-6/js/foundation.js",
+		"/D/Development/foundation-6/index.html",
 		"/D/Development/arbc/css/foundation.css",
 		"/D/Development/arbc/old_experimental_template.php",
 		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
@@ -396,9 +418,7 @@
 		"/C/gammu/bin/gammu-config",
 		"/C/xampp/htdocs/spsms/index.php",
 		"/C/xampp/htdocs/spsms/send.php",
-		"/C/laragon/www/smsgateway/config/app.php",
-		"/C/xampp/htdocs/larasms/config/database.php",
-		"/C/oldgam/smsdrc"
+		"/C/laragon/www/smsgateway/config/app.php"
 	],
 	"find":
 	{
@@ -417,6 +437,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"orbit",
 			"center",
 			".align",
 			"align",
@@ -466,19 +487,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.php",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3211,
+						"buffer_size": 8333,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								575,
-								575
+								6329,
+								6329
 							]
 						],
 						"settings":
@@ -488,8 +509,8 @@
 							"translate_tabs_to_spaces": true,
 							"word_wrap": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 43.0,
+						"translation.x": 63.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -501,15 +522,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 429,
+						"buffer_size": 1163,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34,
-								34
+								849,
+								849
 							]
 						],
 						"settings":
@@ -518,7 +539,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 562.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -530,15 +551,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 437,
+						"buffer_size": 627,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								425,
-								430
+								570,
+								570
 							]
 						],
 						"settings":
@@ -546,10 +567,10 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 157.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -558,15 +579,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7177,
+						"buffer_size": 8768,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1966,
+								1966
 							]
 						],
 						"settings":
@@ -576,10 +597,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 520.0,
+						"translation.y": 443.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -680,7 +701,7 @@
 		[
 			[
 				"",
-				"C:\\vhost\\larasms\\session.sublime-workspace"
+				"C:\\vhost\\laravel\\new_larasms.sublime-project"
 			]
 		],
 		"width": 380.0

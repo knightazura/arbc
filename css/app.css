@@ -1,13 +1,56 @@
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Brandon Grotesque";
+}
 .top-landing, .main-landing {
-	min-height: 50vh; 
 	text-align: center; 
 	color: #fff; 
-	font-family: "Brandon Grotesque"; 
 	font-weight: 200;
 	font-size: 14pt;
 }
-.top-landing { background: #484e58; }
-.main-landing { background: #655a39; border-top: 5px solid #f3fb1e; }
-.main-info-1, .main-info-2 { padding: 1.3em 0; }
+
+.top-landing { background: #484e58; padding: 1em 0 2em; }
+	.title-bar { background: #3b434f; }
+	.website-logo { margin: 0.5em 0; }
+
+.main-landing { 
+	background: #d5ca7f; 
+	/* border-top: 5px solid #f3fb1e; */
+}
+	.card { 
+		position: relative; 
+		top: -1em; 
+		background: white; 
+		padding: .3em;
+		margin-bottom: 1.5em;
+		color: #3a3a3a;
+		box-shadow: 0 5px 17px rgba(30,30,50,.3);
+	}
+	.card:nth-last { margin-bottom: 0 }
+		.card-title {
+			color: white;
+			padding: .3em;
+			font-size: 17pt
+		}
+			.get-involved { background: #afea5b; }
+			.news-gallery { background: #5ba8ea; }
+
+		.card-content {
+			padding: .7em 0;
+		}
+		.get-involved-content,
+		.news-gallery-content {
+			padding: 1em;
+		}
+
+.last-landing {
+	background: #304037;
+	padding: .3em;
+}
+	.last-landing-title { 
+		text-align: center;
+		font-size: 17pt;
+	}
+
+/* .main-info-1, .main-info-2 { padding: 1.3em 0; }
 .main-info-2 { border-top: 3px dashed #b2a57d; }
-.get-involved-button { background: #8092b0; padding: 1em 0; }
+.get-involved-button { background: #8092b0; padding: 1em 0; } */
