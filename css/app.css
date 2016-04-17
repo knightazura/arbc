@@ -1,6 +1,165 @@
-body, h1, h2, h3, h4, h5, h6 {
-	font-family: "Brandon Grotesque";
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+body { font-family: "Raleway", sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", sans-serif; }
+
+/* Custom style */
+	
+
+/* Desktop style */
+.top-part-wrapper {
+	background: #345;
+	height: 60vh;
 }
+	.infographic-large {
+		background: #ffe;
+	}
+	.large-main-menu {
+		padding: 1em 0;
+		margin-top: -2.5em;
+	}
+	.large-main-menu-title-bar {
+		height: 80px;
+		z-index: -1;
+		background: rgba(255,255,255,.9);
+	}
+	.large-main-menu-title-bar.sticky.is-stuck.is-at-top { box-shadow: 0 1px 1px rgba(0,0,0,.3) }
+
+/* Quote main-part */
+.main-quote {
+	font-family: 'Pacifico', cursive;
+	font-size: 4.5em;
+}
+
+/* Get involved main-part */
+.large-get-involved {
+	margin: 3em 0 2em;
+	background: url('../img/paw.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.large-get-involved-content {
+	padding: 4em 0 5em;
+	color: #fff;
+}
+	p.large-get-involved-content {
+		font-weight: 600;
+		line-height: 200%;
+	}
+
+/* Upcoming Events main-part */
+.large-event {
+	padding: 2em 0 0;
+}
+
+.event-p { 
+	font-size: 9pt;
+	font-weight: bold;
+	color: #777;
+}
+
+.all-event-button {
+	padding: 2em 0;
+}
+
+/* Blog main-part */
+.large-blog { 
+	padding: 2em 0;
+	border-top: 1px solid #ccc; 
+}
+
+.single-blog-card {
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 2px rgba(30,30,30,.3);
+}
+	.card-blog-title,
+	.card-blog-content,
+	.card-blog-foot
+	 { padding: 0.7em 0; }
+
+.card-blog-meta {
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #eee;
+	color: #bbb;
+	font-family: serif;
+	font-size: 9pt;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.all-blog-button {
+	padding: 2em 0 0;
+}
+
+/* Foot part */
+.foot-part-wrapper {
+	background: black;
+	color: #fff;
+}
+.foot-tabs { padding: 2em 0 }
+	.the-teams-ava {
+		height: 200px;
+		width: 200px;
+		border-radius: 100px;
+		-webkit-border-radius: 100px;
+		border: 3px solid white;
+		background-size: cover;
+	}
+
+	.team-1, .team-2 {
+		padding: 2em 0 1em;
+	}
+	.team-name { padding: 1em 0 }
+	.ava-1 { background: url('../img/queen_of_leader.png') no-repeat center; }
+	.ava-2 { background: url('../img/ace_of_diamonds.png') no-repeat center; }
+	.ava-3 { background: url('../img/ace_of_hearts.png') no-repeat center; }
+	.ava-4 { background: url('../img/queen_of_diamonds.png') no-repeat center; }
+	.ava-5 { background: url('../img/queen_of_hearts.png') no-repeat center; }
+	.ava-6 { background: url('../img/joker_1.png') no-repeat center; }
+	.ava-7 { background: url('../img/joker_2.png') no-repeat center; }
+
+	.form-contact { padding: 2em 0 }
+	.label-form-foot { color: #fff }
+
+	.tabs, .tabs-content { 
+		background: transparent;
+		border: none;
+	}
+	.tabs-title>a:focus, .tabs-title>a:hover, .tabs-title>a[aria-selected=true] {
+		background: #fff;
+		color: skyblue;
+	}
+	.tabs-title a { 
+		font-weight: 600;
+		color: #fff;
+	}
+	.tabs .tabs-title .is-active { background: white }
+	.tabs-title { border: 1px solid white; }
+	.tabs .tabs-title:not(:last-child) { border-right: none }
+
+.copyright {
+	padding: 2em 0;
+	color: #fff;
+	font-weight: 600;
+}
+
+/* Global main-part */
+.event-title,
+.blog-title { }
+
+.event-cards,
+.blog-cards {
+	padding: 3em 0 2em;
+}
+
+.separator {
+	height: 60px;
+	background: url('../img/footer_separator.png') repeat-x;
+}
+
+/* Mobile Style */
 .top-landing, .main-landing {
 	text-align: center; 
 	color: #fff; 
@@ -54,3 +213,33 @@ body, h1, h2, h3, h4, h5, h6 {
 /* .main-info-1, .main-info-2 { padding: 1.3em 0; }
 .main-info-2 { border-top: 3px dashed #b2a57d; }
 .get-involved-button { background: #8092b0; padding: 1em 0; } */
+
+/* Blog Part */
+#wrapper {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper h1, #wrapper h2, #wrapper h3,
+#wrapper h4, #wrapper h5, #wrapper h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.top-blog-part {
+	padding: 1em 0;
+}
+
+.content-blog-part {
+	margin-top: 5em;
+}
+	.main-content-blog-part {
+		margin-top: 2em;
+	}
+
+.foot-blog-part {
+	margin: 2em 0;
+}
+
+	.copyright {
+		color: gray;
+		font-size: 10pt;
+	}
